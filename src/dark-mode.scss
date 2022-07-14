@@ -1,0 +1,55 @@
+body.dark-mode {
+   background-color: #1f2e35;
+
+   #root {
+      .navigation {
+         .navigation_box {
+            &__navbar {
+               &___navItems {
+                  &____nav {
+                     a {
+                        color: #fff !important;
+                     }
+                  }
+               }
+            }
+            &__hamburger {
+               &___icon {
+                  &____side {
+                     background-color: #fff;
+                  }
+               }
+
+               &___items {
+                  background-color: #22343d;
+
+                  &____head {
+                     .material-symbols-rounded {
+                        color: #fff;
+                     }
+                  }
+
+                  &____nav {
+                     a {
+                        color: #fff;
+
+                        &:hover {
+                           background-color: rgba(0, 0, 0, 0.03);
+                        }
+                     }
+                  }
+
+                  #product,
+                  #customers,
+                  #pricing,
+                  #resources {
+                     a {
+                        background-color: rgba(0, 0, 0, 0.03);
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
