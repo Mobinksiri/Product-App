@@ -114,7 +114,6 @@ const NavigationStyle = styled.div`
 
             &____side:nth-of-type(1) {
                top: 0;
-               height: 3.5px;
             }
             &____side:nth-of-type(2) {
                top: 9.5px;

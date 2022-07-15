@@ -51,5 +51,17 @@ body.dark-mode {
             }
          }
       }
+      .features {
+         .container {
+            .features_box {
+               .ellipse_dark {
+                  opacity: 1;
+               }
+               .ellipse {
+                  opacity: 0;
+               }
+            }
+         }
+      }
    }
 }

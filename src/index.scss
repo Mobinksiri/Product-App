@@ -6,6 +6,13 @@ body {
    transition: var(--transition) background;
 }
 
+body,
+html {
+   width: 100%;
+   overflow-x: hidden;
+   height: fit-content;
+}
+
 *,
 *::after,
 *::before {

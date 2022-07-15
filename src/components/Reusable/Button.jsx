@@ -13,7 +13,7 @@ const ButtonStyle = styled.button`
    color: ${(props) => props.color};
    padding: ${(props) => props.padding};
    border-radius: ${(props) => props.radius};
-   transition: var(--transition) color;
+   transition: var(--transition) color, var(--transition) background-color;
    cursor: pointer;
 
    /* hover */
