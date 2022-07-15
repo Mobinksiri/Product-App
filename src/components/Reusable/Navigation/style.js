@@ -53,7 +53,7 @@ const NavigationStyle = styled.div`
                   line-height: 28px;
                   font-weight: 400;
                   text-decoration: none;
-                  transition: var(--transition);
+                  transition: var(--transition) color;
                }
             }
 
@@ -82,7 +82,7 @@ const NavigationStyle = styled.div`
                border-radius: 50%;
                padding: 6px;
                background-color: #f3f3f3;
-               transition: var(--transition);
+               transition: var(--transition) background;
 
                &:hover {
                   background-color: #f0f0f0;
@@ -98,7 +98,9 @@ const NavigationStyle = styled.div`
             height: 22px;
             cursor: pointer;
             display: block;
-            transition: var(--transition);
+            transition: var(--transition) all;
+            border: 7px solid transparent;
+            box-sizing: content-box;
 
             &____side {
                position: absolute;
@@ -107,11 +109,12 @@ const NavigationStyle = styled.div`
                width: 100%;
                background-color: #173a56;
                left: 0;
-               transition: var(--transition);
+               transition: var(--transition) all;
             }
 
             &____side:nth-of-type(1) {
                top: 0;
+               height: 3.5px;
             }
             &____side:nth-of-type(2) {
                top: 9.5px;
@@ -141,15 +144,15 @@ const NavigationStyle = styled.div`
             position: fixed;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.08);
+            background-color: rgba(0, 0, 0, 0.35);
             opacity: 0;
             top: 0;
             left: 0;
             pointer-events: none;
+            transition: var(--transition) all;
          }
 
          &___overlay____active {
-            background-color: rgba(0, 0, 0, 0.08);
             opacity: 1;
             pointer-events: visible;
          }
@@ -163,7 +166,7 @@ const NavigationStyle = styled.div`
             background-color: white;
             border-left: 1px solid rgba(0, 0, 0, 0.1);
             list-style: none;
-            transition: var(--transition);
+            transition: var(--transition) all;
 
             @media screen and (max-width: 900px) {
                width: 45%;
@@ -193,7 +196,7 @@ const NavigationStyle = styled.div`
                   font-size: 30px;
                   color: var(--text-dark--blue);
                   cursor: pointer;
-                  transition: var(--transition);
+                  transition: var(--transition) color;
                }
 
                #mode_svg {
@@ -203,7 +206,7 @@ const NavigationStyle = styled.div`
                   border-radius: 50%;
                   padding: 6px;
                   background-color: #f3f3f3;
-                  transition: var(--transition);
+                  transition: var(--transition) background;
 
                   &:hover {
                      background-color: #f0f0f0;
@@ -221,7 +224,7 @@ const NavigationStyle = styled.div`
                   line-height: 28px;
                   font-weight: 400;
                   text-decoration: none;
-                  transition: var(--transition);
+                  transition: var(--transition) color;
 
                   &:hover {
                      background-color: rgba(0, 0, 0, 0.01);

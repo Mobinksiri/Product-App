@@ -3,7 +3,7 @@ body {
    font-family: "Poppins", sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   transition: var(--transition);
+   transition: var(--transition) background;
 }
 
 *,
@@ -19,5 +19,5 @@ body {
    --primary: #02897a;
    --text-dark: #2f281e;
    --text-dark--blue: #22343d;
-   --transition: 0.2s all;
+   --transition: 0.2s;
 }
