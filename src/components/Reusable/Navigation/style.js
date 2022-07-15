@@ -92,6 +92,8 @@ const NavigationStyle = styled.div`
       }
 
       &__hamburger {
+         z-index: 100;
+
          &___icon {
             position: relative;
             width: 28px;

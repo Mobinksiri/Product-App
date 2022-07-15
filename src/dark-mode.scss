@@ -63,5 +63,17 @@ body.dark-mode {
             }
          }
       }
+      .section {
+         .container {
+            .section_box {
+               .ellipse_dark {
+                  opacity: 1;
+               }
+               .ellipse {
+                  opacity: 0;
+               }
+            }
+         }
+      }
    }
 }

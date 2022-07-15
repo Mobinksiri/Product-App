@@ -91,6 +91,13 @@ const Typography = ({ element, children, uppercase, changeMode }) => {
                height: "24px",
             });
             break;
+         case "title3":
+            setStyles({
+               weight: "500",
+               size: "16px",
+               height: "24px",
+            });
+            break;
       }
    };
 
@@ -108,7 +115,8 @@ const Typography = ({ element, children, uppercase, changeMode }) => {
                : element == "paragraph1" ||
                  element == "paragraph2" ||
                  element == "title1" ||
-                 element == "title2"
+                 element == "title2" ||
+                 element == "title3"
                ? "p"
                : element
          }
