@@ -6,7 +6,6 @@ const PriceStyled = styled.div`
    @media screen and (max-width: 425px) {
       padding-top: 60px;
    }
-   padding-bottom: 50px;
 
    .price_box {
       &__head {

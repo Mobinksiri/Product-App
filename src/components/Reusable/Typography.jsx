@@ -21,7 +21,13 @@ const TypographyStyle = styled.div`
    }
 `;
 
-const Typography = ({ element, children, uppercase, changeMode }) => {
+const Typography = ({
+   element,
+   children,
+   uppercase,
+   changeMode,
+   className,
+}) => {
    // states -
    const [styles, setStyles] = useState({
       weight: "",
@@ -105,6 +111,13 @@ const Typography = ({ element, children, uppercase, changeMode }) => {
                height: "24px",
             });
             break;
+         case "title4":
+            setStyles({
+               weight: "500",
+               size: "14px",
+               height: "24px",
+            });
+            break;
       }
    };
 
@@ -114,6 +127,7 @@ const Typography = ({ element, children, uppercase, changeMode }) => {
 
    return (
       <TypographyStyle
+         className={className}
          $uppercase={uppercase === true ? "uppercase" : "inherit"}
          element={element}
          as={
@@ -123,7 +137,8 @@ const Typography = ({ element, children, uppercase, changeMode }) => {
                  element == "paragraph2" ||
                  element == "title1" ||
                  element == "title2" ||
-                 element == "title3"
+                 element == "title3" ||
+                 element == "title4"
                ? "p"
                : element
          }
