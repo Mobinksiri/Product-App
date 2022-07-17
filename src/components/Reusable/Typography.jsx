@@ -56,6 +56,13 @@ const Typography = ({ element, children, uppercase, changeMode }) => {
                height: "40px",
             });
             break;
+         case "h5":
+            setStyles({
+               weight: "700",
+               size: "16px",
+               height: "28px",
+            });
+            break;
          case "logo":
             setStyles({
                weight: "700",
