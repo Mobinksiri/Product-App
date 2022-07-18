@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Cosumer/Header/Header";
 
 const Customers = () => {
-   return <div></div>;
+   return (
+      <>
+         <Header />
+      </>
+   );
 };
 
 export default Customers;
