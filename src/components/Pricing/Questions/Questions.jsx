@@ -43,7 +43,7 @@ const QuestionsStyle = styled.div`
             &____head {
                display: flex;
                align-items: center;
-               margin-bottom: 16px;
+               transition: var(--transition) all;
 
                @media screen and (max-width: 425px) {
                   align-items: flex-start;
@@ -56,6 +56,7 @@ const QuestionsStyle = styled.div`
                   border-radius: 50px;
                   position: relative;
                   margin-right: 16px;
+                  transition: var(--transition) transform;
 
                   span {
                      width: 12px;
@@ -66,6 +67,7 @@ const QuestionsStyle = styled.div`
                      left: 50%;
                      top: 50%;
                      transform: translate(-50%, -50%);
+                     transition: var(--transition) transform;
                   }
 
                   span:last-of-type {
@@ -92,6 +94,20 @@ const QuestionsStyle = styled.div`
                height: 0;
             }
          }
+
+         .active {
+            .questions_box__questions___question____head {
+               margin-bottom: 16px;
+
+               &_____plus {
+                  transform: rotateZ(-180deg);
+
+                  span:last-of-type {
+                     transform: translate(-50%, -50%) rotateZ(0deg);
+                  }
+               }
+            }
+         }
       }
    }
 `;
@@ -116,7 +132,7 @@ const Questions = () => {
                <Head />
                <div id="questions_wrapper" className="questions_box__questions">
                   <Question
-                     className="first_question"
+                     className="first_question active"
                      title="What are my payment option?"
                      paragraph2="After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.
                      After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically."

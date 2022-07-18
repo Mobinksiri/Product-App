@@ -92,5 +92,30 @@ body.dark-mode {
             }
          }
       }
+      .enterprise {
+         .enterprise_box {
+            .ellipse {
+               background: #22343d;
+            }
+         }
+      }
+      .questions {
+         .questions_box {
+            &__questions {
+               &___question:first-of-type {
+                  border-top: none;
+                  padding-top: 0;
+                  margin-top: 0;
+
+                  .paragraph_wrapper {
+                     height: 0;
+                  }
+               }
+               &___question {
+                  border-top: 1px solid rgba(255, 255, 255, 0.075);
+               }
+            }
+         }
+      }
    }
 }

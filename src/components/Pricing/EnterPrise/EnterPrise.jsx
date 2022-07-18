@@ -69,7 +69,7 @@ const Content = () => (
 
 const EnterPrise = () => {
    return (
-      <EnterPriseStyle>
+      <EnterPriseStyle className="enterprise">
          <Container>
             <div className="enterprise_box">
                <div className="ellipse"></div>

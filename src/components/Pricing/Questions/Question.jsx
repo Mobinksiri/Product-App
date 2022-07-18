@@ -10,9 +10,11 @@ const Question = ({ title, paragraph2, className }) => {
       for (let i = 0; i < questionsArray.length; i++) {
          const element = questionsArray[i];
          element.children[1].style.height = "0";
+         element.classList.remove("active");
       }
 
       // set new
+      e.target.classList.add("active");
       const wrapper = e.target.children[1];
       const paragraph = wrapper.children[0];
       wrapper.style.height = paragraph.clientHeight + "px";
@@ -20,7 +22,6 @@ const Question = ({ title, paragraph2, className }) => {
 
    useEffect(() => {
       const firstQuestion = document.querySelector(".first_question");
-      console.log(firstQuestion.children[1].children[0].clientHeight);
       firstQuestion.children[1].style.height =
          firstQuestion.children[1].children[0].clientHeight + "px";
    }, []);
