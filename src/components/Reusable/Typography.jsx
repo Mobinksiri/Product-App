@@ -118,6 +118,13 @@ const Typography = ({
                height: "24px",
             });
             break;
+         case "title5":
+            setStyles({
+               weight: "500",
+               size: "20px",
+               height: "30px",
+            });
+            break;
       }
    };
 
@@ -138,7 +145,8 @@ const Typography = ({
                  element == "title1" ||
                  element == "title2" ||
                  element == "title3" ||
-                 element == "title4"
+                 element == "title4" ||
+                 element == "title5"
                ? "p"
                : element
          }

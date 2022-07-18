@@ -1,6 +1,7 @@
 import React from "react";
 import Articles from "../Home/Articles/Articles";
 import Features from "../Home/Features/Features";
+import Footer from "../Home/Footer/Footer";
 import Header from "../Home/Header/Header";
 import Price from "../Home/Price/Price";
 import Reviews from "../Home/Reviews/Reviews";
@@ -17,6 +18,7 @@ const Home = () => {
          <Stories />
          <Price />
          <Reviews />
+         <Footer />
       </>
    );
 };
