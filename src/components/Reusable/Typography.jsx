@@ -135,7 +135,7 @@ const Typography = ({
    return (
       <TypographyStyle
          className={className}
-         $uppercase={uppercase === true ? "uppercase" : "inherit"}
+         $uppercase={uppercase ? "uppercase" : "inherit"}
          element={element}
          as={
             element == "logo"
