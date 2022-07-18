@@ -228,6 +228,7 @@ const FooterNav = ({ navArr, head }) => (
       </Typography>
       {navArr.map((nav) => (
          <Typography
+            key={nav}
             element="paragraph2"
             changeMode={true}
             className="footer_box__navbar___nav____nav"

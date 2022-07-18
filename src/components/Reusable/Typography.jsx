@@ -125,6 +125,13 @@ const Typography = ({
                height: "30px",
             });
             break;
+         case "question":
+            setStyles({
+               weight: "500",
+               size: "18px",
+               height: "27px",
+            });
+            break;
       }
    };
 
@@ -146,7 +153,8 @@ const Typography = ({
                  element == "title2" ||
                  element == "title3" ||
                  element == "title4" ||
-                 element == "title5"
+                 element == "title5" ||
+                 element == "question"
                ? "p"
                : element
          }
