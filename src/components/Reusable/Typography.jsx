@@ -125,6 +125,13 @@ const Typography = ({
                height: "30px",
             });
             break;
+         case "title6":
+            setStyles({
+               weight: "600",
+               size: "24px",
+               height: "36px",
+            });
+            break;
          case "question":
             setStyles({
                weight: "500",
@@ -154,7 +161,8 @@ const Typography = ({
                  element == "title3" ||
                  element == "title4" ||
                  element == "title5" ||
-                 element == "question"
+                 element == "question" ||
+                 element == "title6"
                ? "p"
                : element
          }

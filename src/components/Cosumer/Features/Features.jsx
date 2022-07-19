@@ -29,7 +29,7 @@ const FeaturesStyle = styled.div`
          text-align: center;
 
          @media screen and (max-width: 425px) {
-            margin-bottom: 40px;
+            margin-bottom: 0px;
          }
       }
 
