@@ -120,5 +120,28 @@ body.dark-mode {
       .consumer_features {
          background: #22343d;
       }
+      .offers {
+         .offers_box {
+            .ellipse {
+               background: #22343d;
+            }
+
+            &__offers {
+               &___offer {
+                  p:first-of-type {
+                     color: #fff;
+                  }
+                  p:last-of-type {
+                     color: #fff;
+                  }
+                  &____categories {
+                     p {
+                        color: #fff !important;
+                     }
+                  }
+               }
+            }
+         }
+      }
    }
 }
