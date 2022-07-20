@@ -5,6 +5,7 @@ import Typography from "../../Reusable/Typography";
 import Story1 from "../../../assets/stories/story1.jpg";
 import Story2 from "../../../assets/stories/story2.jpg";
 import Story3 from "../../../assets/stories/story3.jpg";
+import Story from "../../Reusable/Story";
 
 // swiper imports --
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,21 +25,6 @@ const Head = () => (
          We focus on ergonomics and meeting you where you work. It's only a
          keystroke away.
       </Typography>
-   </div>
-);
-const Story = ({ date, image, title, owner }) => (
-   <div className="stories_box__items___story">
-      <div className="stories_box__items___story____image">
-         <img src={image} alt="" />
-      </div>
-      <div className="stories_box__items___story____desc">
-         <Typography element="paragraph2" changeMode={false}>
-            By <span>{owner}</span> | {date}
-         </Typography>
-         <Typography element="h3" changeMode={false}>
-            {title}
-         </Typography>
-      </div>
    </div>
 );
 const StoriesItems = ({ width }) => (

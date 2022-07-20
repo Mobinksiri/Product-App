@@ -75,23 +75,6 @@ body.dark-mode {
             }
          }
       }
-      .stories {
-         .container {
-            .stories_box {
-               &__items {
-                  .swiper {
-                     .swiper-wrapper {
-                        .swiper-slide {
-                           .stories_box__items___story {
-                              border: 0;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      }
       .enterprise {
          .enterprise_box {
             .ellipse {
@@ -159,6 +142,9 @@ body.dark-mode {
                }
             }
          }
+      }
+      .story {
+         border: none;
       }
    }
 }
