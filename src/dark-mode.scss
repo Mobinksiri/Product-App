@@ -143,5 +143,22 @@ body.dark-mode {
             }
          }
       }
+      .header_resources {
+         .header_box {
+            .two-column {
+               .left {
+                  form.form {
+                     input {
+                        color: #fff;
+
+                        &::placeholder {
+                           color: #fff;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
    }
 }

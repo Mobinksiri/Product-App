@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../Resources/Header/Header";
 
 const Resources = () => {
-   return <div></div>;
+   return (
+      <>
+         <Header />
+      </>
+   );
 };
 
 export default Resources;
