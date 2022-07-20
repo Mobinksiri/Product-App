@@ -7,10 +7,11 @@ import Price from "../Home/Price/Price";
 import Reviews from "../Home/Reviews/Reviews";
 import Section from "../Home/Section/Section";
 import Stories from "../Home/Stories/Stories";
+import DocumentMeta from "react-document-meta";
 
 const Home = () => {
    return (
-      <>
+      <DocumentMeta title="Product App">
          <Header />
          <Features />
          <Articles />
@@ -19,7 +20,7 @@ const Home = () => {
          <Price />
          <Reviews />
          <Footer />
-      </>
+      </DocumentMeta>
    );
 };
 
