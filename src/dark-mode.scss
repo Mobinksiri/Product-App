@@ -146,5 +146,13 @@ body.dark-mode {
       .story {
          border: none;
       }
+      .contact {
+         .contact_box {
+            &__form {
+               background: #22343d;
+               border: 1px solid #464646;
+            }
+         }
+      }
    }
 }
